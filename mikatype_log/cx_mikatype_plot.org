@@ -1,0 +1,47 @@
+#+qiita_private: e47f263b43795cb7773a
+#+STARTUP: indent nolineimagess overview num
+#+OPTIONS: ^:{}
+#+TITLE: コンピュータ演習A 21: cx_mikatype_plot
+#+AUTHOR: Shigeto R. Nishitani
+#+EMAIL:     (concat "shigeto_nishitani@mac.com")
+#+LANGUAGE:  jp
+#+OPTIONS:   H:4 toc:t num:2
+# +OPTIONS:   toc:nil
+#+TAG: Python, novice
+#+TWITTER: off
+#+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup
+
+* file open
+- path => \ -> /に変更必要
+- encoding = 'sjis' ほんまかな，まぁ出力されているので．．．
+
+* argv
+#+begin_src python
+import sys
+sys.argv
+#+end_src
+なんですが，file pathを打ち間違うだろうから，そのままcodeを
+変更させる方が間違いがなさそう．
+
+自動で変換させましょうか．．．
+ARGVからとるので試しましょう．
+Mikatypeはwindowsですので．
+
+mikatype.logのパスですが，
+explorer.exeでPC-> Local Diskを選んで，
+そこで，mikatype.logを検索させるのが良さそう．
+
+* scanf
+parseライブラリ
+: pip install parse
+が必要
+
+* datetime
+parse, strftimeとかね．
+* final
+
+#+name: ./python_codes/mikatype_log/mikatype_plot.py　
+#+include: ./python_codes/mikatype_log/mikatype_plot.py src python :noweb yes
+
+[[https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/151211/63942db2-5c1c-8fdf-f77c-275096ab4cf4.png][file:./python_codes/mikatype_log/Figure_1.png]]
+
